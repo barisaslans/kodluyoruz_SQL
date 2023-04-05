@@ -30,6 +30,7 @@ AND replacement_cost =
 --payment tablosunda en fazla sayıda alışveriş yapan
 -- müşterileri(customer) sıralayınız.
 
+
 SELECT customer_id, COUNT(*) AS most_purchases FROM payment
 GROUP BY customer_id
 ORDER BY most_purchases DESC;
